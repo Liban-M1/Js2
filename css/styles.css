@@ -1,9 +1,9 @@
 body {
-    
-    
+    margin: 0;
+    background-color: #a69bd0;
 }
 
-.index {
+.inde {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +35,8 @@ body {
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
+    border-radius: 20px;
+    background: rgb(176, 245, 155);
 }
 
 .profile-picture {
@@ -101,10 +103,10 @@ body {
 #postButton {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007bff;
+    background-color: #a69bd0;
     color: #fff;
-    border: 1px solid black;
-    border-radius: 2px;
+    border: 1px solid white;
+    border-radius: 5px;
     cursor: pointer;
     margin: 10px;
 }
@@ -126,9 +128,10 @@ body {
 
 
 .separator {
-    border: 5px solid black;
+    border: 5px solid white;
     margin: 20px auto; 
     max-width: 80%; 
+    border-radius: 60%;
 }
 
 .filter,
@@ -157,6 +160,15 @@ body {
     font-size: 14px;
 }
 
+.search button {
+    background-color: rgb(176, 245, 155);
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
 .additional-component {
     width: 100%;
     max-width: 500px;
@@ -177,13 +189,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-
-  
-  
-
-
-
 
 .card {
   border-radius: 10px;
@@ -237,4 +242,46 @@ body {
 
 .deleteBtn:hover {
     background-color: darkred;
+}
+
+.editBtn {
+    background-color: orange;
+}
+
+.editBtn:hover {
+    background-color: rgb(149, 82, 0);
+}
+
+.post-id {
+    color: #666666;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333; 
+  color: rgb(176, 245, 155); 
+}
+
+.company-name {
+  font-size: 20px; 
+}
+
+.navbar-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: rgb(176, 245, 155); 
 }
