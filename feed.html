@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="post-container">
+      <div class="post-form">
+        <div class="profile-picture">
+          <img src="" alt="" />
+        </div>
+        <div class="author-info">
+          <div class="username" id="username"></div>
+        </div>
+        <div class="title">
+          <input type="text" id="postTitle" placeholder="Enter title" required maxlength="280"/>
+        </div>
+        <textarea
+          id="postContent"
+          rows="4"
+          cols="50"
+          placeholder="Write your post here..."
+        ></textarea>
+        <div class="attachment">
+          <input type="text" id="media" placeholder="Enter image URL (optional)" />
+        </div>
+        <div>
+          <button id="postButton">Post</button>
+        </div>
+      </div>
+
+      <!-- 
+      <div>
+        <hr class="separator"/>
+      </div>
+      <div>
+      <div class="filter">
+        <label for="sortBy">Sort By:</label>
+        <select id="sortBy">
+          <option value="newest">Newest</option>
+          <option value="oldest">Oldest</option>
+          <option value="friends">Friends</option>
+        </select>
+      </div>
+      <div class="search">
+        <label for="searchInput">Search:</label>
+        <input type="text" id="searchInput" />
+        <button id="searchButton">Search</button>
+      </div>
+      </div>
+      <div>
+        <hr class="separator"/>
+      </div>
+      <div id="post-feed">
+
+      </div>
+      -->
+    </section>
+          <section id="postFeed" class="card-container">
+        
+      </section>
+
+    <script type="module" src="/js/postFeed.js"></script>
+  </body>
 </html>

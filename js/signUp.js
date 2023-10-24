@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const name = document.getElementById("name").value;
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
+      const avatar = document.getElementById("avatar").value;
+      const banner = document.getElementById("banner").value;
 
       try {
           const response = await fetch(registrationUrl, {
@@ -25,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
                   name,
                   email,
                   password,
+                  avatar,
+                  banner,
               }),
           });
 
