@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    background-color: #a69bd0;
+}
+
+.inde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    text-align: center;
+}
+
+.form input,
+.form button {
+    margin-bottom: 10px;
+}
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: rgb(176, 245, 155);
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-bottom: 10px;
+    overflow: hidden; 
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.title {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#postTitle {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+}
+
+.username {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+#postContent {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.attachment {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#imageUrl {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#postButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a69bd0;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .post-form {
+        max-width: 100%;
+    }
+
+    .attachment {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #imageUrl {
+        margin-bottom: 10px;
+    }
+}
+
+
+.separator {
+    border: 5px solid white;
+    margin: 20px auto; 
+    max-width: 80%; 
+    border-radius: 60%;
+}
+
+.filter,
+.search {
+    
+    vertical-align: middle;
+    text-align: center; 
+    margin-bottom: 10px; 
+    padding: 5px;
+}
+
+.filter {
+    margin-right: 10px;
+}
+
+.filter label,
+.search label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.filter select,
+.search input,
+.search button {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.search button {
+    background-color: rgb(176, 245, 155);
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.additional-component {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .additional-component {
+        max-width: none; 
+    }
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  width: 300px;
+  border: 1px solid #ccc;
+  margin: 20px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 24px;
+  color: #333333;
+}
+
+.card-description {
+  margin: 10px 0;
+  color: #666666;
+}
+
+.card-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4c96d7;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 3px 0;
+}
+
+.card-link:hover {
+  background-color: #346fa5;
+}
+
+.deleteBtn {
+    background-color: red;
+    
+}
+
+.deleteBtn:hover {
+    background-color: darkred;
+}
+
+.editBtn {
+    background-color: orange;
+}
+
+.editBtn:hover {
+    background-color: rgb(149, 82, 0);
+}
+
+.post-id {
+    color: #666666;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333; 
+  color: rgb(176, 245, 155); 
+}
+
+.company-name {
+  font-size: 20px; 
+}
+
+.navbar-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 10px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: rgb(176, 245, 155); 
+}

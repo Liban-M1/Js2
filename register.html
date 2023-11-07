@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Socially</title>
+  <meta name="description" content="Social media platform " />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <section class="inde">
+    <form class="form" id="Register">
+      <h1>Register to Socially</h1>
+      <div>
+        <input type="text" id="name" placeholder="Name" required pattern="^[\w]+$" maxlength="20" />
+      </div>
+      <div>
+        <input type="email" id="email" placeholder="Email" required pattern="^[\w\-.]+@(stud\.)?noroff\.no$" />
+      </div>
+      <div>
+        <input type="password" id="password" placeholder="Password" required minlength="8" />
+      </div>
+      <div>
+        <input type="text" id="avatar" placeholder="Avatar URL (optional)" />
+      </div>
+      <div>
+        <input type="text" id="banner" placeholder="Banner URL (optional)" />
+      </div>
+      <div>
+        <button type="submit" name="submit">Register</button>
+      </div>
+      <div>
+        <p>Already have an account? <a href="index.html">Login</a></p>
+      </div>
+    </form>
+    <script type="module" src="/js/signUp.js"></script>
+  </section>
+</body>
+</html>
