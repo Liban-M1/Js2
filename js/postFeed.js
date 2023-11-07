@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   </div>
                   <h3 class="card-title">${post.title}</h3>
                   <p class="card-description">${post.body || ""}</p>
-                  <a class="card-link readMoreBtn" id="readMoreLink${post.id}" href="#">Read More</a>
+                  <a class="card-link readMoreBtn" href="post.html?id=${post.id}">Read More</a>
                   ${
                     post.author.email === loggedInUserEmail
                       ? `<a class="card-link editBtn" data-postid="${post.id}" href="#">Edit</a>`
